@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reclip"
+version = "0.1.0"
+description = "A modern text-to-image embedding and generation pipeline"
+authors = [{ name="Your Name", email="you@example.com" }]
+dependencies = [
+    "torch",
+    "timm",
+    "sentence-transformers",
+    "transformers",
+    "hf_transfer",
+    "hf_xet",
+    "open-clip-torch",
+    "datasets",
+    "torchvision",
+    "ollama",
+    "Pillow"
+]
+
+[tool.setuptools]
+packages = ["reclip"]
